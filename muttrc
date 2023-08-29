@@ -1,0 +1,15 @@
+set folder = "imaps://$NEOMUTT_MAILBOX@imap.gmail.com:993"
+
+set imap_pass = "$NEOMUTT_IMAP_PASS"
+
+set smtp_url = "smtps://$NEOMUTT_MAILBOX@gmail.com:587"
+
+set realname = "Maciej Gierada"
+set from = "$NEOMUTT_MAILBOX"
+
+set spoolfile = "+Inbox"
+set record = "+Sent"
+set trash = "+Trash"
+set postponed = "+Drafts"
+
+mailboxes =INBOX =Sent =Trash =Drafts 
