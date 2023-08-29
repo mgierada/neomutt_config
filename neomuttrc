@@ -1,3 +1,6 @@
+source ~/.config/neomutt/main/settings
+source ~/.config/neomutt/main/colors
+
 set folder = "imaps://$NEOMUTT_MAILBOX@imap.gmail.com:993"
 
 set imap_pass = "$NEOMUTT_IMAP_PASS"
