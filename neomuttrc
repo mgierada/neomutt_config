@@ -12,8 +12,12 @@ set realname = "Maciej Gierada"
 set from = "$NEOMUTT_MAILBOX"
 
 set spoolfile = "+Inbox"
-set record = "+Sent"
+# set record = "+Sent"
 set trash = "+Trash"
-set postponed = "+Drafts"
+# set postponed = "+Drafts"
 
-mailboxes =INBOX =Sent =Trash =Drafts 
+# mailboxes =INBOX =Sent =Trash =Drafts 
+mailboxes =INBOX =Trash 
+
+# use very high $read_inc to speed up reading hcache'd maildirs
+folder-hook . 'set read_inc=1000'

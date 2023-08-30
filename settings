@@ -28,8 +28,10 @@ set text_flowed
 unset sig_dashes                     # no dashes before sig
 unset mime_forward                   # forward attachments as part of body
 unset help                           # No help bar at the top of index
+
 # set status_on_top                    # Status bar on top of index
-set tmpdir = ~/Programs/neomutt/temp # where to keep temp files
+# set tmpdir = ~/Programs/neomutt/temp # where to keep temp files
+# set mail_check = 0
 
 unset confirmappend      # don't ask, just do!
 set quit                 # don't ask, just do!!
@@ -37,8 +39,8 @@ unset mark_old           # read/new is good enough for me
 set beep_new             # bell on new mails
 set pipe_decode          # strip headers and eval mimes when piping
 set thorough_search      # strip headers and eval mimes before searching
-set timeout = 0
-
+# set timeout = 0
+ 
 # status bar, date format, finding stuff etc.
 set status_chars = " *%A"
 set status_format = "[ Folder: %f ] [%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]%>─%?p?( %p postponed )?"
