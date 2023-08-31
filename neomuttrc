@@ -2,22 +2,28 @@ source ~/.config/neomutt/main/settings
 source ~/.config/neomutt/main/colors
 source ~/.config/neomutt/main/mappings
 
-set folder = "imaps://$NEOMUTT_MAILBOX@imap.gmail.com:993"
+source ~/.config/neomutt/main/accounts/01_work
+folder-hook $folder 'source ~/.config/neomutt/main/accounts/01_work'
 
-set imap_pass = "$NEOMUTT_IMAP_PASS"
+source ~/.config/neomutt/main/accounts/02_personal
+folder-hook $folder 'source ~/.config/neomutt/main/accounts/02_personal'
 
-set smtp_url = "smtps://$NEOMUTT_MAILBOX@gmail.com:587"
-
-set realname = "Maciej Gierada"
-set from = "$NEOMUTT_MAILBOX"
-
-set spoolfile = "+Inbox"
-# set record = "+Sent"
-set trash = "+Trash"
-# set postponed = "+Drafts"
-
-# mailboxes =INBOX =Sent =Trash =Drafts 
-mailboxes =INBOX =Trash 
-
-# use very high $read_inc to speed up reading hcache'd maildirs
-folder-hook . 'set read_inc=1000'
+# set folder = "imaps://$NEOMUTT_MAILBOX@imap.gmail.com:993"
+#
+# set imap_pass = "$NEOMUTT_IMAP_PASS"
+#
+# set smtp_url = "smtps://$NEOMUTT_MAILBOX@gmail.com:587"
+#
+# set realname = "Maciej Gierada"
+# set from = "$NEOMUTT_MAILBOX"
+#
+# set spoolfile = "+Inbox"
+# # set record = "+Sent"
+# set trash = "+Trash"
+# # set postponed = "+Drafts"
+#
+# # mailboxes =INBOX =Sent =Trash =Drafts 
+# mailboxes =INBOX =Trash 
+#
+# # use very high $read_inc to speed up reading hcache'd maildirs
+# folder-hook . 'set read_inc=1000'

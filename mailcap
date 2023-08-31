@@ -7,7 +7,7 @@ application/pdf; open -a Preview %s
 # application/pdf; /usr/local/bin/zathura %s pdf
 
 #Images
-image/png; /usr/bin/imgcat %s
-image/jpeg; /usr/bin/imgcat %s
+image/png; open -a Preview %s
+image/jpeg; open -a Preview %s
 # image/png; /usr/bin/feh %s
 # image/jpeg; /usr/bin/feh %s
