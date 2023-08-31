@@ -3,7 +3,8 @@ text/html; w3m -I %{charset} -T text/html; copiousoutput;
 text/plain; nvim %s
 
 #PDFs
-application/pdf; /usr/local/bin/zathura %s pdf
+application/pdf; open -a Preview %s
+# application/pdf; /usr/local/bin/zathura %s pdf
 
 #Images
 image/png; /usr/bin/imgcat %s
