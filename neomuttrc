@@ -6,5 +6,9 @@ source ~/.config/neomutt/main/mappings
 source ~/.config/neomutt/main/accounts/02_personal
 folder-hook $folder 'source ~/.config/neomutt/main/accounts/02_personal'
 
+source ~/.config/neomutt/main/accounts/03_work_s
+folder-hook $folder 'source ~/.config/neomutt/main/accounts/03_work_s'
+
 source ~/.config/neomutt/main/accounts/01_work
 folder-hook $folder 'source ~/.config/neomutt/main/accounts/01_work'
+

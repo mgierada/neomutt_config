@@ -57,4 +57,4 @@ macro index,pager A \
 ## Shortcuts
 macro index,pager ( '<sync-mailbox><enter-command>source ~/.config/neomutt/main/accounts/01_work<enter><change-folder>!<enter>'
 macro index,pager ) '<sync-mailbox><enter-command>source ~/.config/neomutt/main/accounts/02_personal<enter><change-folder>!<enter>'
-# macro index,pager <f4> '<sync-mailbox><enter-command>source ~/.config/neomutt/accounts/school<enter><change-folder>!<enter>'
+macro index,pager - '<sync-mailbox><enter-command>source ~/.config/neomutt/main/accounts/03_work_s<enter><change-folder>!<enter>'
