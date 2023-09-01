@@ -4,7 +4,8 @@ unmailboxes *
 # in/out mail servers
 set realname = "Maciej Gierada"
 set imap_pass = "$NEOMUTT_IMAP_PASS_PERSONAL"
-set smtp_url = "smtps://$NEOMUTT_MAILBOX_PERSONAL@gmail.com:587"
+set smtp_url = "smtps://$NEOMUTT_MAILBOX_PERSONAL@smtp.gmail.com"
+set smtp_authenticators="gssapi:digest-md5:cram-md5:login"
 set smtp_pass = "$NEOMUTT_IMAP_PASS_PERSONAL"
 set folder = "imaps://$NEOMUTT_MAILBOX_PERSONAL@imap.gmail.com:993"
 set spoolfile = "+INBOX"

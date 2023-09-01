@@ -4,7 +4,8 @@ unmailboxes *
 # in/out mail servers
 set realname = "Maciej Gierada"
 set imap_pass = "$NEOMUTT_IMAP_PASS_BRAIDWELL"
-set smtp_url = "smtps://$NEOMUTT_MAILBOX_BRAIDWELL@gmail.com:587"
+set smtp_url = "smtps://$NEOMUTT_MAILBOX_BRAIDWELL@smtp.gmail.com"
+set smtp_authenticators="gssapi:digest-md5:cram-md5:login"
 set smtp_pass = "$NEOMUTT_IMAP_PASS_BRAIDWELL"
 set folder = "imaps://$NEOMUTT_MAILBOX_BRAIDWELL@imap.gmail.com:993"
 set spoolfile = "+INBOX"
@@ -12,9 +13,9 @@ set spoolfile = "+INBOX"
 set from = "$NEOMUTT_MAILBOX_BRAIDWELL"
 set envelope_from
 set use_from = "yes"
-set record = "+Sent"
+set record = "+[Gmail]/Sent Mail"
 set trash = "+Trash"
-set postponed = "+Drafts"
+set postponed = "+[Gmail]/Drafts"
 set mail_check = 6
 
 # Allow Mutt to open a new IMAP connection automatically.
